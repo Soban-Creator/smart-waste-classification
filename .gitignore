@@ -22,3 +22,8 @@ models/*.pth
 # OS files
 .DS_Store
 Thumbs.db
+
+# Dataset files
+data/raw/
+data/processed/
+data/splits/
