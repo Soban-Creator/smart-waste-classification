@@ -18,6 +18,7 @@ logs/
 # Trained models
 models/*.pt
 models/*.pth
+models/*.ckpt
 
 # OS files
 .DS_Store
