@@ -1,0 +1,35 @@
+{
+  "model_name": "resnet50",
+  "training_mode": "classifier",
+  "pretrained": true,
+  "random_seed": 42,
+  "device": "cpu",
+  "batch_size": 8,
+  "number_of_workers": 0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "maximum_epochs": 10,
+  "early_stopping_patience": 3,
+  "minimum_improvement": 0.001,
+  "dropout_probability": 0.2,
+  "scheduler_step_size": 4,
+  "scheduler_gamma": 0.5,
+  "total_parameters": 23520326,
+  "trainable_parameters": 12294,
+  "class_names": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "class_weights": [
+    0.8237703442573547,
+    0.6675379872322083,
+    0.8122490644454956,
+    0.5597668290138245,
+    0.691378653049469,
+    2.4452972412109375
+  ]
+}
