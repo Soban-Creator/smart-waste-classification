@@ -1,0 +1,96 @@
+{
+    "experiment": {
+        "experiment_name": "efficientnet_b0",
+        "architecture": "efficientnet_b0",
+        "model_version": "1.0.0",
+        "framework": "PyTorch",
+        "pytorch_version": "2.13.0+cpu",
+        "torchvision_version": "0.28.0+cpu",
+        "device": "cpu",
+        "completed_at": "2026-08-02T17:12:24.781621"
+    },
+    "dataset": {
+        "dataset_name": "TrashNet",
+        "number_of_classes": 6,
+        "class_names": [
+            "cardboard",
+            "glass",
+            "metal",
+            "paper",
+            "plastic",
+            "trash"
+        ],
+        "training_images": 1762,
+        "validation_images": 378,
+        "test_images": 381,
+        "image_size": [
+            224,
+            224
+        ]
+    },
+    "frozen_stage": {
+        "best_epoch": 10,
+        "best_validation_loss": 0.6257856652219459,
+        "best_validation_accuracy": 0.7751322751322751,
+        "classifier_learning_rate": 0.001
+    },
+    "fine_tuning_stage": {
+        "fine_tuned_feature_blocks": 2,
+        "first_trainable_block_index": 7,
+        "batch_normalization_frozen": true,
+        "backbone_learning_rate": 1e-05,
+        "classifier_learning_rate": 0.0001,
+        "best_epoch": 5,
+        "best_validation_loss": 0.5583719280030992,
+        "best_validation_accuracy": 0.8068783068783069
+    },
+    "test_metrics": {
+        "loss": 0.42724937184902,
+        "accuracy": 0.8530183727034121,
+        "weighted_precision": 0.8625673319273957,
+        "weighted_recall": 0.8530183727034121,
+        "weighted_f1_score": 0.8549542106742782,
+        "macro_precision": 0.8300747502824625,
+        "macro_recall": 0.8411297387513675,
+        "macro_f1_score": 0.831306039912363,
+        "macro_roc_auc": 0.9820261562325207,
+        "weighted_roc_auc": 0.9816992222668395
+    },
+    "class_analysis": {
+        "strongest_class": {
+            "class_name": "metal",
+            "per_class_accuracy": 0.9354838709677419
+        },
+        "weakest_class": {
+            "class_name": "trash",
+            "per_class_accuracy": 0.7619047619047619
+        },
+        "most_frequent_confusion": {
+            "true_class": "glass",
+            "predicted_class": "plastic",
+            "count": 10
+        },
+        "correct_predictions": 325,
+        "incorrect_predictions": 56,
+        "mean_correct_confidence": 0.8745156526565552,
+        "mean_incorrect_confidence": 0.6340378522872925
+    },
+    "deployment_metrics": {
+        "checkpoint_size_mb": 24.230475425720215,
+        "total_parameters": 4015234,
+        "mean_latency_ms": 39.156232000968885,
+        "median_latency_ms": 37.7845500188414,
+        "latency_standard_deviation_ms": 6.559999399183795,
+        "latency_95th_percentile_ms": 51.97428501996909,
+        "predictions_per_second": 25.538718842386466,
+        "latency_runs": 100
+    },
+    "artifacts": {
+        "checkpoint": "..\\models\\efficientnet_b0_finetuned_best.pt",
+        "classification_report": "..\\results\\efficientnet_b0_classification_report.csv",
+        "confusion_matrix_csv": "..\\results\\efficientnet_b0_confusion_matrix.csv",
+        "confusion_matrix_figure": "..\\results\\figures\\efficientnet_b0_test_confusion_matrix.png",
+        "per_class_results": "..\\results\\efficientnet_b0_per_class_results.csv",
+        "prediction_results": "..\\results\\efficientnet_b0_test_predictions.csv"
+    }
+}

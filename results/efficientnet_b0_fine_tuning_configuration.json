@@ -1,0 +1,23 @@
+{
+    "experiment_name": "efficientnet_b0",
+    "architecture": "efficientnet_b0",
+    "model_version": "1.0.0",
+    "training_stage": "controlled_fine_tuning",
+    "starting_checkpoint": "..\\models\\efficientnet_b0_frozen_best.pt",
+    "output_checkpoint": "..\\models\\efficientnet_b0_finetuned_best.pt",
+    "fine_tuned_feature_blocks": 2,
+    "first_trainable_block_index": 7,
+    "batch_normalization_frozen": true,
+    "backbone_learning_rate": 1e-05,
+    "classifier_learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "maximum_epochs": 5,
+    "best_epoch": 5,
+    "best_validation_loss": 0.5583719280030992,
+    "best_validation_accuracy": 0.8068783068783069,
+    "parameter_summary": {
+        "total_parameters": 4015234,
+        "trainable_parameters": 1129270,
+        "frozen_parameters": 2885964
+    }
+}

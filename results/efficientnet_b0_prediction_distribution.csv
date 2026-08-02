@@ -1,0 +1,7 @@
+,true_count,predicted_count,count_difference
+cardboard,61,51,-10
+glass,75,67,-8
+metal,62,68,6
+paper,90,94,4
+plastic,72,73,1
+trash,21,28,7
