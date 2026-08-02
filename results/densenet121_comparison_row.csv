@@ -1,0 +1,2 @@
+model_name,architecture,test_loss,test_accuracy,weighted_precision,weighted_recall,weighted_f1_score,macro_f1_score,macro_roc_auc,model_size_mb,total_parameters,mean_inference_latency_ms,median_inference_latency_ms,predictions_per_second,best_validation_accuracy,best_validation_loss
+DenseNet121,densenet121,0.43380080980891633,0.8293963254593176,0.8385175465300236,0.8293963254593176,0.8305418589085698,0.8151373170376255,0.9819813202420157,43.45800590515137,6960006,159.79032699979143,151.4430499955779,6.258201098751774,0.8571428571428571,0.4429367433780085

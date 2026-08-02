@@ -1,0 +1,7 @@
+,true_count,predicted_count
+cardboard,61,65
+glass,75,62
+metal,62,70
+paper,90,82
+plastic,72,74
+trash,21,28

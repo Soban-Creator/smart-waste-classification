@@ -1,0 +1,66 @@
+{
+    "experiment_name": "densenet121",
+    "architecture": "densenet121",
+    "model_version": "1.0.0",
+    "device": "cpu",
+    "dataset": {
+        "training_images": 1762,
+        "validation_images": 378,
+        "test_images": 381,
+        "class_names": [
+            "cardboard",
+            "glass",
+            "metal",
+            "paper",
+            "plastic",
+            "trash"
+        ],
+        "image_size": [
+            224,
+            224
+        ]
+    },
+    "frozen_stage": {
+        "best_epoch": 10,
+        "validation_loss": 0.5783591475436296,
+        "validation_accuracy": 0.8306878306878307
+    },
+    "fine_tuning_stage": {
+        "trainable_backbone_section": "denseblock4",
+        "batch_normalization_frozen": true,
+        "backbone_learning_rate": 1e-05,
+        "classifier_learning_rate": 0.0001,
+        "best_epoch": 5,
+        "validation_loss": 0.4429367433780085,
+        "validation_accuracy": 0.8571428571428571
+    },
+    "test_metrics": {
+        "loss": 0.43380080980891633,
+        "accuracy": 0.8293963254593176,
+        "weighted_precision": 0.8385175465300236,
+        "weighted_recall": 0.8293963254593176,
+        "weighted_f1": 0.8305418589085698,
+        "macro_precision": 0.807848404209537,
+        "macro_recall": 0.8317970181785622,
+        "macro_f1": 0.8151373170376255,
+        "macro_roc_auc": 0.9819813202420157,
+        "weighted_roc_auc": 0.9811553370820769
+    },
+    "class_analysis": {
+        "strongest_class": "metal",
+        "weakest_class": "glass",
+        "most_frequent_confusion": {
+            "true_class": "paper",
+            "predicted_class": "cardboard",
+            "count": 9
+        }
+    },
+    "deployment_metrics": {
+        "checkpoint_size_mb": 43.45800590515137,
+        "total_parameters": 6960006,
+        "mean_latency_ms": 159.79032699979143,
+        "median_latency_ms": 151.4430499955779,
+        "latency_95th_percentile_ms": 239.83255998900856,
+        "predictions_per_second": 6.258201098751774
+    }
+}
