@@ -1,0 +1,26 @@
+{
+    "model_name": "ResNet50",
+    "architecture": "resnet50",
+    "model_version": "1.0.0",
+    "selected_at": "2026-08-04T00:58:41.854705",
+    "class_names": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+    ],
+    "evaluation_summary": {
+        "model_name": "ResNet50",
+        "test_accuracy": 0.9028871391076116,
+        "weighted_f1_score": 0.9028349058967232,
+        "macro_f1_score": 0.8943660739703909,
+        "macro_roc_auc": 0.9910226220501372,
+        "model_size_mb": 90.02570247650146,
+        "mean_latency_ms": 128.0236589978449,
+        "predictions_per_second": 7.8110562362292235
+    },
+    "model_path": "..\\models\\final_waste_classifier.pt",
+    "gradcam_report_directory": "..\\reports\\gradcam"
+}

@@ -1,0 +1,9 @@
+architecture,example_type,image_path,true_class,predicted_class,confidence,gradcam_path
+mobilenet_v3_large,correct,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\cardboard\cardboard389.jpg,cardboard,cardboard,1.0,..\reports\gradcam\mobilenet_v3_large_correct_cardboard389.png
+mobilenet_v3_large,correct,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\plastic\plastic247.jpg,plastic,plastic,0.9999995231628418,..\reports\gradcam\mobilenet_v3_large_correct_plastic247.png
+mobilenet_v3_large,incorrect,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\cardboard\cardboard254.jpg,cardboard,paper,0.9978322386741638,..\reports\gradcam\mobilenet_v3_large_incorrect_cardboard254.png
+mobilenet_v3_large,incorrect,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\glass\glass359.jpg,glass,plastic,0.9975802898406982,..\reports\gradcam\mobilenet_v3_large_incorrect_glass359.png
+resnet50,correct,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\plastic\plastic282.jpg,plastic,plastic,0.9999984502792358,..\reports\gradcam\resnet50_correct_plastic282.png
+resnet50,correct,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\paper\paper26.jpg,paper,paper,0.9999922513961792,..\reports\gradcam\resnet50_correct_paper26.png
+resnet50,incorrect,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\paper\paper462.jpg,paper,cardboard,0.9980727434158325,..\reports\gradcam\resnet50_incorrect_paper462.png
+resnet50,incorrect,C:\Users\Mudassar Iqbal Shah\Documents\Internship\smart-waste-classification\data\processed\test\glass\glass443.jpg,glass,metal,0.979150652885437,..\reports\gradcam\resnet50_incorrect_glass443.png
