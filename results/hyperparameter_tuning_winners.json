@@ -1,0 +1,32 @@
+{
+    "mobilenet_v3_large": {
+        "configuration": {
+            "trial_name": "mobilenet_trial_3",
+            "backbone_learning_rate": 1e-05,
+            "classifier_learning_rate": 0.0003,
+            "weight_decay": 0.0001,
+            "dropout_rate": 0.2,
+            "fine_tune_last_n_blocks": 3
+        },
+        "best_epoch": 3,
+        "validation_loss": 0.3926890938685685,
+        "validation_accuracy": 0.8677248677248677,
+        "validation_macro_f1": 0.8539987079695637,
+        "trial_checkpoint_path": "C:\\Users\\Mudassar Iqbal Shah\\Documents\\Internship\\smart-waste-classification\\models\\mobilenet_trial_3_best.pt"
+    },
+    "resnet50": {
+        "configuration": {
+            "trial_name": "resnet50_trial_2",
+            "backbone_learning_rate": 3e-05,
+            "classifier_learning_rate": 0.0001,
+            "weight_decay": 0.0001,
+            "dropout_rate": 0.3,
+            "unfreeze_layer4": true
+        },
+        "best_epoch": 3,
+        "validation_loss": 0.3650533377178132,
+        "validation_accuracy": 0.8968253968253969,
+        "validation_macro_f1": 0.8800833126540911,
+        "trial_checkpoint_path": "C:\\Users\\Mudassar Iqbal Shah\\Documents\\Internship\\smart-waste-classification\\models\\resnet50_trial_2_best.pt"
+    }
+}
