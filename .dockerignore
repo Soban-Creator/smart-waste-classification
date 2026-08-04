@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local virtual environments
+.venv/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# Raw and processed datasets are not needed for inference
+data/raw/
+data/processed/
+data/splits/
+
+# Training notebooks and generated experiment outputs
+notebooks/
+logs/
+reports/
+
+# Temporary files
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
